@@ -1,0 +1,16 @@
+run,id,difficulty,evidence_recall,facts_present,badge_ok,confidence_ok,unverified_ids,deterministic_score,groundedness,reasoning_correctness,completeness,usefulness,uncertainty_clarity,judge_mean,badge,confidence,tool_calls,latency_s,intent_s,retrieval_s,synthesis_s,cost_usd
+tuned,Q01,easy,1.0,1.0,True,True,0,1.0,5,5,5,4,5,4.8,GROUNDED,1.0,1,4.551,1.432,1.76,1.354,0.01055
+tuned,Q02,easy,0.0,0.0,False,False,0,0.0,5,5,5,4,5,4.8,NEEDS REVIEW,0.3,1,4.79,1.459,2.084,1.243,0.01037
+tuned,Q03,easy,1.0,1.0,True,True,0,1.0,4,4,5,5,5,4.6,GROUNDED,0.9,1,6.65,1.777,2.804,2.048,0.01553
+tuned,Q04,easy,0.0,1.0,False,False,0,0.3,5,5,4,5,5,4.8,NEEDS REVIEW,0.3,1,5.234,1.634,2.435,1.165,0.01003
+tuned,Q05,medium,1.0,1.0,True,True,0,1.0,5,5,5,5,5,5.0,GROUNDED,0.95,2,9.904,1.554,4.953,3.378,0.03016
+tuned,Q06,medium,1.0,1.0,True,True,0,1.0,2,2,2,3,3,2.4,GROUNDED,0.9,1,11.213,1.984,4.962,4.135,0.04266
+tuned,Q07,medium,1.0,1.0,True,True,0,1.0,5,5,5,5,5,5.0,GROUNDED,0.99,1,6.622,1.442,2.607,2.534,0.01704
+tuned,Q08,medium,1.0,0.0,False,False,0,0.4,5,5,5,4,5,4.8,NEEDS REVIEW,0.3,1,5.292,1.426,2.381,1.481,0.01088
+tuned,Q09,medium,1.0,1.0,True,True,0,1.0,4,5,4,5,5,4.6,GROUNDED,0.92,1,27.177,1.591,23.425,2.16,0.01948
+tuned,Q10,medium,1.0,1.0,True,True,0,1.0,4,5,4,5,4,4.4,GROUNDED,0.9,2,11.056,1.698,5.474,3.884,0.04491
+tuned,Q11,hard,1.0,1.0,True,True,0,1.0,4,4,4,5,5,4.4,GROUNDED,0.7,1,9.409,2.738,4.127,2.536,0.01955
+tuned,Q12,hard,1.0,1.0,False,False,0,0.7,5,5,5,4,5,4.8,NEEDS REVIEW,0.2,2,5.645,1.466,2.735,1.444,0.01341
+tuned,Q13,hard,1.0,1.0,True,True,0,1.0,5,5,5,4,5,4.8,GROUNDED,1.0,1,7.384,3.144,2.276,1.955,0.01552
+tuned,Q14,hard,1.0,1.0,True,True,0,1.0,4,4,5,5,4,4.4,GROUNDED,0.7,2,13.501,1.67,7.208,4.607,0.03661
+tuned,Q15,ambiguous,1.0,1.0,True,True,0,1.0,5,5,5,5,5,5.0,NEEDS REVIEW,0.5,1,106.69,1.706,101.467,3.517,0.01834

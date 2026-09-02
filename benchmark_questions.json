@@ -1,0 +1,199 @@
+[
+  {
+    "id": "Q01",
+    "difficulty": "easy",
+    "question": "What is the lead time and safety stock quantity for part SC-417?",
+    "expected_evidence_ids": [
+      "SC-417"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "45",
+      "150"
+    ],
+    "min_confidence": 0.6
+  },
+  {
+    "id": "Q02",
+    "difficulty": "easy",
+    "question": "Which supplier is the approved source for part SC-417?",
+    "expected_evidence_ids": [
+      "SUP-00042"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "NorthStar"
+    ],
+    "min_confidence": 0.6
+  },
+  {
+    "id": "Q03",
+    "difficulty": "easy",
+    "question": "What is the status of purchase order PO-9999001?",
+    "expected_evidence_ids": [
+      "PO-9999001"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "Late"
+    ],
+    "min_confidence": 0.6
+  },
+  {
+    "id": "Q04",
+    "difficulty": "easy",
+    "question": "Are there any open quality holds affecting part SC-417?",
+    "expected_evidence_ids": [
+      "QE-9999001"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "Hold"
+    ],
+    "min_confidence": 0.5
+  },
+  {
+    "id": "Q05",
+    "difficulty": "medium",
+    "question": "Why is Part SC-417 projected to create a shortage at Plant P2 in the next planning window?",
+    "expected_evidence_ids": [
+      "SC-417",
+      "PO-9999001",
+      "QE-9999001"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "P2"
+    ],
+    "min_confidence": 0.5,
+    "notes": "golden scenario - brief 13.2 Q1"
+  },
+  {
+    "id": "Q06",
+    "difficulty": "medium",
+    "question": "Which products or build plans are exposed if the SC-417 shortage at Plant P2 is not mitigated?",
+    "expected_evidence_ids": [
+      "SC-417"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "HRV-03"
+    ],
+    "min_confidence": 0.5
+  },
+  {
+    "id": "Q07",
+    "difficulty": "medium",
+    "question": "Are there approved substitutes for SC-417, and what constraints apply?",
+    "expected_evidence_ids": [
+      "SC-417"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "SC-418"
+    ],
+    "min_confidence": 0.5
+  },
+  {
+    "id": "Q08",
+    "difficulty": "medium",
+    "question": "Is there inventory of SC-417 at any other plant that could be transferred to Plant P2?",
+    "expected_evidence_ids": [
+      "SC-417"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "P5"
+    ],
+    "min_confidence": 0.5
+  },
+  {
+    "id": "Q09",
+    "difficulty": "medium",
+    "question": "What is the risk profile of supplier SUP-00042?",
+    "expected_evidence_ids": [
+      "SUP-00042"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "Medium-High"
+    ],
+    "min_confidence": 0.5
+  },
+  {
+    "id": "Q10",
+    "difficulty": "medium",
+    "question": "Which demand, supplier, shipment, inventory and quality events contribute to the SC-417 risk at Plant P2, and in what order?",
+    "expected_evidence_ids": [
+      "SC-417",
+      "PO-9999001"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [],
+    "min_confidence": 0.4,
+    "notes": "brief 13.2 Q2 - temporal ordering"
+  },
+  {
+    "id": "Q11",
+    "difficulty": "hard",
+    "question": "Which mitigation option for the SC-417 shortage at Plant P2 gives the best balance of coverage, lead time and operational risk?",
+    "expected_evidence_ids": [
+      "SC-417"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "SC-418",
+      "P5"
+    ],
+    "min_confidence": 0.3,
+    "notes": "brief 13.2 Q5 - both mitigations are constrained; must not overclaim"
+  },
+  {
+    "id": "Q12",
+    "difficulty": "hard",
+    "question": "How did the SC-417 inventory position at Plant P2 change between 2026-06 and 2026-09?",
+    "expected_evidence_ids": [
+      "SC-417"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "2026-09"
+    ],
+    "min_confidence": 0.5
+  },
+  {
+    "id": "Q13",
+    "difficulty": "hard",
+    "question": "What does the forecast for product HRV-03 in North America for 2026-09 show, and how does it differ from the baseline?",
+    "expected_evidence_ids": [
+      "HRV-03"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [
+      "127"
+    ],
+    "min_confidence": 0.4
+  },
+  {
+    "id": "Q14",
+    "difficulty": "hard",
+    "question": "What evidence is missing or contradictory in the SC-417 shortage case at Plant P2?",
+    "expected_evidence_ids": [
+      "SC-417"
+    ],
+    "expected_badge": "GROUNDED",
+    "must_mention": [],
+    "min_confidence": 0.3,
+    "notes": "should surface the capacity gap after 2026-04 and/or the two shipments"
+  },
+  {
+    "id": "Q15",
+    "difficulty": "ambiguous",
+    "question": "Should we switch to the substitute?",
+    "expected_evidence_ids": [],
+    "expected_badge": "NEEDS REVIEW",
+    "must_mention": [],
+    "max_confidence": 0.7,
+    "notes": "deliberately underspecified - no part, plant or timeframe. The agent should lower confidence or ask for clarification rather than guess."
+  }
+]

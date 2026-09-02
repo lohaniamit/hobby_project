@@ -1,0 +1,930 @@
+{
+  "generated_at": "2026-09-02 11:04:14",
+  "dataset_dir": "D:\\Downloads\\AGCO Capstone\\AGCO Capstone\\02-Supply-Chain\\dataset",
+  "total_rows": 269186,
+  "note_files": 59,
+  "inventory": [
+    {
+      "dataset": "customer_orders",
+      "file": "customer_orders.csv",
+      "rows": 30260,
+      "cols": 8,
+      "null_cells_%": 1.25,
+      "cols_with_nulls": 2
+    },
+    {
+      "dataset": "supplier_capacity",
+      "file": "supplier_capacity.csv",
+      "rows": 28000,
+      "cols": 8,
+      "null_cells_%": 13.75,
+      "cols_with_nulls": 3
+    },
+    {
+      "dataset": "purchase_orders",
+      "file": "purchase_orders.csv",
+      "rows": 27002,
+      "cols": 10,
+      "null_cells_%": 11.0,
+      "cols_with_nulls": 3
+    },
+    {
+      "dataset": "inventory_positions",
+      "file": "inventory_positions.csv",
+      "rows": 24005,
+      "cols": 9,
+      "null_cells_%": 0.56,
+      "cols_with_nulls": 1
+    },
+    {
+      "dataset": "demand_forecast",
+      "file": "demand_forecast.csv",
+      "rows": 21630,
+      "cols": 9,
+      "null_cells_%": 1.11,
+      "cols_with_nulls": 2
+    },
+    {
+      "dataset": "products_bom",
+      "file": "products_bom.csv",
+      "rows": 21600,
+      "cols": 7,
+      "null_cells_%": 1.43,
+      "cols_with_nulls": 2
+    },
+    {
+      "dataset": "shipments",
+      "file": "shipments.csv",
+      "rows": 21122,
+      "cols": 9,
+      "null_cells_%": 3.98,
+      "cols_with_nulls": 3
+    },
+    {
+      "dataset": "production_plans",
+      "file": "plants_and_production_plans.csv",
+      "rows": 18001,
+      "cols": 9,
+      "null_cells_%": 0.56,
+      "cols_with_nulls": 1
+    },
+    {
+      "dataset": "substitution_rules",
+      "file": "substitution_rules.csv",
+      "rows": 16020,
+      "cols": 8,
+      "null_cells_%": 13.12,
+      "cols_with_nulls": 2
+    },
+    {
+      "dataset": "quality_events",
+      "file": "quality_events.csv",
+      "rows": 16001,
+      "cols": 9,
+      "null_cells_%": 0.56,
+      "cols_with_nulls": 1
+    },
+    {
+      "dataset": "suppliers",
+      "file": "suppliers.csv",
+      "rows": 15225,
+      "cols": 11,
+      "null_cells_%": 10.77,
+      "cols_with_nulls": 5
+    },
+    {
+      "dataset": "logistics_lanes",
+      "file": "logistics_lanes.csv",
+      "rows": 15200,
+      "cols": 8,
+      "null_cells_%": 0.62,
+      "cols_with_nulls": 1
+    },
+    {
+      "dataset": "parts",
+      "file": "parts.csv",
+      "rows": 15120,
+      "cols": 12,
+      "null_cells_%": 9.93,
+      "cols_with_nulls": 5
+    }
+  ],
+  "null_detail": [
+    {
+      "dataset": "purchase_orders",
+      "column": "po_notes",
+      "nulls": 27001,
+      "null_%": 100.0
+    },
+    {
+      "dataset": "substitution_rules",
+      "column": "compatibility_notes",
+      "nulls": 16019,
+      "null_%": 99.99
+    },
+    {
+      "dataset": "supplier_capacity",
+      "column": "capacity_notes",
+      "nulls": 27996,
+      "null_%": 99.99
+    },
+    {
+      "dataset": "parts",
+      "column": "part_notes",
+      "nulls": 14998,
+      "null_%": 99.19
+    },
+    {
+      "dataset": "suppliers",
+      "column": "supplier_notes",
+      "nulls": 15000,
+      "null_%": 98.52
+    },
+    {
+      "dataset": "shipments",
+      "column": "actual_arrival_date",
+      "nulls": 5457,
+      "null_%": 25.84
+    },
+    {
+      "dataset": "suppliers",
+      "column": "risk_rating",
+      "nulls": 761,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "suppliers",
+      "column": "payment_terms",
+      "nulls": 761,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "suppliers",
+      "column": "certification_status",
+      "nulls": 761,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "supplier_capacity",
+      "column": "committed_units",
+      "nulls": 1400,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "supplier_capacity",
+      "column": "utilization_pct",
+      "nulls": 1400,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "demand_forecast",
+      "column": "forecast_version",
+      "nulls": 1081,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "suppliers",
+      "column": "supplier_country",
+      "nulls": 761,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "products_bom",
+      "column": "bom_version",
+      "nulls": 1080,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "products_bom",
+      "column": "effective_date",
+      "nulls": 1080,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "shipments",
+      "column": "carrier",
+      "nulls": 1056,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "purchase_orders",
+      "column": "unit_price",
+      "nulls": 1350,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "inventory_positions",
+      "column": "reserved_qty",
+      "nulls": 1200,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "shipments",
+      "column": "eta_date",
+      "nulls": 1056,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "customer_orders",
+      "column": "customer_segment",
+      "nulls": 1513,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "purchase_orders",
+      "column": "promised_date",
+      "nulls": 1350,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "customer_orders",
+      "column": "dealer_id",
+      "nulls": 1513,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "demand_forecast",
+      "column": "planner_id",
+      "nulls": 1081,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "quality_events",
+      "column": "disposition_status",
+      "nulls": 800,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "production_plans",
+      "column": "planned_qty",
+      "nulls": 900,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "substitution_rules",
+      "column": "approval_date",
+      "nulls": 801,
+      "null_%": 5.0
+    },
+    {
+      "dataset": "parts",
+      "column": "weight_kg",
+      "nulls": 755,
+      "null_%": 4.99
+    },
+    {
+      "dataset": "parts",
+      "column": "min_order_qty",
+      "nulls": 754,
+      "null_%": 4.99
+    },
+    {
+      "dataset": "parts",
+      "column": "lead_time_days",
+      "nulls": 754,
+      "null_%": 4.99
+    },
+    {
+      "dataset": "parts",
+      "column": "unit_cost",
+      "nulls": 754,
+      "null_%": 4.99
+    },
+    {
+      "dataset": "logistics_lanes",
+      "column": "cost_index",
+      "nulls": 759,
+      "null_%": 4.99
+    }
+  ],
+  "foreign_keys": [
+    {
+      "child": "products_bom.part_id",
+      "parent": "parts.part_id",
+      "distinct_values": 11609,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "supplier_capacity.supplier_id",
+      "parent": "suppliers.supplier_id",
+      "distinct_values": 962,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "supplier_capacity.part_id",
+      "parent": "parts.part_id",
+      "distinct_values": 980,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "purchase_orders.supplier_id",
+      "parent": "suppliers.supplier_id",
+      "distinct_values": 9916,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "purchase_orders.part_id",
+      "parent": "parts.part_id",
+      "distinct_values": 11803,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "purchase_orders.plant_id",
+      "parent": "production_plans.plant_id",
+      "distinct_values": 12,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "shipments.po_id",
+      "parent": "purchase_orders.po_id",
+      "distinct_values": 21121,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "shipments.lane_id",
+      "parent": "logistics_lanes.lane_id",
+      "distinct_values": 11395,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "inventory_positions.part_id",
+      "parent": "parts.part_id",
+      "distinct_values": 4647,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "inventory_positions.plant_id",
+      "parent": "production_plans.plant_id",
+      "distinct_values": 12,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "quality_events.part_id",
+      "parent": "parts.part_id",
+      "distinct_values": 9313,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "quality_events.supplier_id",
+      "parent": "suppliers.supplier_id",
+      "distinct_values": 8035,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "substitution_rules.original_part_id",
+      "parent": "parts.part_id",
+      "distinct_values": 7500,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "substitution_rules.substitute_part_id",
+      "parent": "parts.part_id",
+      "distinct_values": 9843,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "demand_forecast.product_id",
+      "parent": "products_bom.product_id",
+      "distinct_values": 70,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "customer_orders.product_id",
+      "parent": "products_bom.product_id",
+      "distinct_values": 70,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "production_plans.product_id",
+      "parent": "products_bom.product_id",
+      "distinct_values": 70,
+      "orphans": 0,
+      "example_orphan": ""
+    },
+    {
+      "child": "logistics_lanes.destination_plant_id",
+      "parent": "production_plans.plant_id",
+      "distinct_values": 12,
+      "orphans": 0,
+      "example_orphan": ""
+    }
+  ],
+  "entity_resolution": {
+    "supplier_alias_map": {
+      "SUP-15002": "SUP-04329",
+      "SUP-15003": "SUP-05236",
+      "SUP-15004": "SUP-11651",
+      "SUP-15006": "SUP-13653",
+      "SUP-15007": "SUP-07806",
+      "SUP-15008": "SUP-00733",
+      "SUP-15009": "SUP-11172",
+      "SUP-15010": "SUP-12617",
+      "SUP-15011": "SUP-09559",
+      "SUP-15012": "SUP-11088",
+      "SUP-15013": "SUP-06719",
+      "SUP-15014": "SUP-11921",
+      "SUP-15015": "SUP-08392",
+      "SUP-15016": "SUP-14505",
+      "SUP-15017": "SUP-14443",
+      "SUP-15018": "SUP-11623",
+      "SUP-15020": "SUP-12845",
+      "SUP-15021": "SUP-14579",
+      "SUP-15022": "SUP-14836",
+      "SUP-15023": "SUP-02218",
+      "SUP-15024": "SUP-12971",
+      "SUP-15025": "SUP-02977",
+      "SUP-15027": "SUP-10273",
+      "SUP-15028": "SUP-02019",
+      "SUP-15029": "SUP-01983",
+      "SUP-15030": "SUP-14070",
+      "SUP-15031": "SUP-02771",
+      "SUP-15032": "SUP-14500",
+      "SUP-15033": "SUP-00295",
+      "SUP-15034": "SUP-08539",
+      "SUP-15035": "SUP-01664",
+      "SUP-15036": "SUP-03908",
+      "SUP-15037": "SUP-02286",
+      "SUP-15038": "SUP-04166",
+      "SUP-15039": "SUP-05122",
+      "SUP-15040": "SUP-12451",
+      "SUP-15041": "SUP-13882",
+      "SUP-15042": "SUP-12749",
+      "SUP-15043": "SUP-10226",
+      "SUP-15044": "SUP-04252",
+      "SUP-15045": "SUP-09217",
+      "SUP-15046": "SUP-06679",
+      "SUP-15047": "SUP-11458",
+      "SUP-15048": "SUP-14941",
+      "SUP-15049": "SUP-00212",
+      "SUP-15050": "SUP-13071",
+      "SUP-15051": "SUP-04661",
+      "SUP-15052": "SUP-02726",
+      "SUP-15055": "SUP-07186",
+      "SUP-15056": "SUP-10957",
+      "SUP-15057": "SUP-14191",
+      "SUP-15058": "SUP-12009",
+      "SUP-15059": "SUP-08545",
+      "SUP-15060": "SUP-10142",
+      "SUP-15061": "SUP-02594",
+      "SUP-15062": "SUP-03833",
+      "SUP-15063": "SUP-06612",
+      "SUP-15064": "SUP-00833",
+      "SUP-15065": "SUP-02008",
+      "SUP-15066": "SUP-01818",
+      "SUP-15067": "SUP-04828",
+      "SUP-15068": "SUP-03536",
+      "SUP-15069": "SUP-04486",
+      "SUP-15070": "SUP-13556",
+      "SUP-15071": "SUP-13949",
+      "SUP-15072": "SUP-00100",
+      "SUP-15073": "SUP-09834",
+      "SUP-15074": "SUP-00053",
+      "SUP-15075": "SUP-12165",
+      "SUP-15076": "SUP-10117",
+      "SUP-15077": "SUP-04499",
+      "SUP-15078": "SUP-11749",
+      "SUP-15079": "SUP-14359",
+      "SUP-15080": "SUP-12181",
+      "SUP-15081": "SUP-10524",
+      "SUP-15082": "SUP-04839",
+      "SUP-15083": "SUP-10991",
+      "SUP-15084": "SUP-10528",
+      "SUP-15085": "SUP-00440",
+      "SUP-15086": "SUP-04573",
+      "SUP-15087": "SUP-01734",
+      "SUP-15088": "SUP-03783",
+      "SUP-15089": "SUP-07110",
+      "SUP-15090": "SUP-08838",
+      "SUP-15091": "SUP-03887",
+      "SUP-15092": "SUP-13229",
+      "SUP-15093": "SUP-12914",
+      "SUP-15094": "SUP-01595",
+      "SUP-15095": "SUP-06371",
+      "SUP-15096": "SUP-04295",
+      "SUP-15097": "SUP-13773",
+      "SUP-15098": "SUP-14534",
+      "SUP-15099": "SUP-10751",
+      "SUP-15100": "SUP-06463",
+      "SUP-15101": "SUP-14634",
+      "SUP-15102": "SUP-00910",
+      "SUP-15103": "SUP-07320",
+      "SUP-15104": "SUP-02713",
+      "SUP-15105": "SUP-13814",
+      "SUP-15106": "SUP-01719",
+      "SUP-15107": "SUP-09486",
+      "SUP-15108": "SUP-00956",
+      "SUP-15109": "SUP-09225",
+      "SUP-15110": "SUP-06978",
+      "SUP-15111": "SUP-04687",
+      "SUP-15112": "SUP-02658",
+      "SUP-15113": "SUP-02632",
+      "SUP-15114": "SUP-06076",
+      "SUP-15115": "SUP-02547",
+      "SUP-15116": "SUP-13125",
+      "SUP-15117": "SUP-02642",
+      "SUP-15118": "SUP-03748",
+      "SUP-15119": "SUP-04194",
+      "SUP-15120": "SUP-01886",
+      "SUP-15121": "SUP-07184",
+      "SUP-15122": "SUP-01332",
+      "SUP-15123": "SUP-13234",
+      "SUP-15124": "SUP-01078",
+      "SUP-15125": "SUP-01177",
+      "SUP-15126": "SUP-12583",
+      "SUP-15127": "SUP-14685",
+      "SUP-15128": "SUP-05944",
+      "SUP-15129": "SUP-10265",
+      "SUP-15130": "SUP-07525",
+      "SUP-15131": "SUP-10372",
+      "SUP-15132": "SUP-00661",
+      "SUP-15134": "SUP-12975",
+      "SUP-15135": "SUP-04141",
+      "SUP-15136": "SUP-06166",
+      "SUP-15137": "SUP-13322",
+      "SUP-15138": "SUP-13591",
+      "SUP-15139": "SUP-13410",
+      "SUP-15140": "SUP-14211",
+      "SUP-15141": "SUP-08174",
+      "SUP-15142": "SUP-07244",
+      "SUP-15143": "SUP-11985",
+      "SUP-15144": "SUP-10787",
+      "SUP-15145": "SUP-11209",
+      "SUP-15146": "SUP-04602",
+      "SUP-15148": "SUP-00938",
+      "SUP-15149": "SUP-06460",
+      "SUP-15150": "SUP-13782",
+      "SUP-15151": "SUP-12622",
+      "SUP-15152": "SUP-09912",
+      "SUP-15154": "SUP-14782",
+      "SUP-15156": "SUP-04595",
+      "SUP-15158": "SUP-04926",
+      "SUP-15159": "SUP-07411",
+      "SUP-15160": "SUP-13418",
+      "SUP-15161": "SUP-14869",
+      "SUP-15162": "SUP-00296",
+      "SUP-15163": "SUP-11368",
+      "SUP-15164": "SUP-12995",
+      "SUP-15165": "SUP-02247",
+      "SUP-15166": "SUP-13314",
+      "SUP-15167": "SUP-06260",
+      "SUP-15168": "SUP-12615",
+      "SUP-15169": "SUP-03750",
+      "SUP-15171": "SUP-06291",
+      "SUP-15172": "SUP-13333",
+      "SUP-15173": "SUP-06935",
+      "SUP-15174": "SUP-00058",
+      "SUP-15175": "SUP-10106",
+      "SUP-15177": "SUP-01861",
+      "SUP-15178": "SUP-06066",
+      "SUP-15179": "SUP-13164",
+      "SUP-15180": "SUP-11439",
+      "SUP-15181": "SUP-09478",
+      "SUP-15182": "SUP-04689",
+      "SUP-15183": "SUP-10422",
+      "SUP-15184": "SUP-02554",
+      "SUP-15185": "SUP-01577",
+      "SUP-15186": "SUP-11432",
+      "SUP-15187": "SUP-08189",
+      "SUP-15188": "SUP-12778",
+      "SUP-15189": "SUP-12640",
+      "SUP-15190": "SUP-01572",
+      "SUP-15191": "SUP-12350",
+      "SUP-15192": "SUP-06107",
+      "SUP-15193": "SUP-08962",
+      "SUP-15194": "SUP-03790",
+      "SUP-15195": "SUP-06673",
+      "SUP-15196": "SUP-13282",
+      "SUP-15197": "SUP-11373",
+      "SUP-15198": "SUP-00252",
+      "SUP-15199": "SUP-05798",
+      "SUP-15200": "SUP-09579",
+      "SUP-15201": "SUP-10837",
+      "SUP-15202": "SUP-11031",
+      "SUP-15203": "SUP-01775",
+      "SUP-15204": "SUP-09873",
+      "SUP-15205": "SUP-00119",
+      "SUP-15206": "SUP-01385",
+      "SUP-15207": "SUP-01197",
+      "SUP-15208": "SUP-01884",
+      "SUP-15210": "SUP-11375",
+      "SUP-15211": "SUP-05345",
+      "SUP-15212": "SUP-14504",
+      "SUP-15213": "SUP-12559",
+      "SUP-15214": "SUP-05721",
+      "SUP-15215": "SUP-10672",
+      "SUP-15216": "SUP-12020",
+      "SUP-15217": "SUP-09377",
+      "SUP-15218": "SUP-09722",
+      "SUP-15219": "SUP-11204",
+      "SUP-15220": "SUP-14541",
+      "SUP-15221": "SUP-08795",
+      "SUP-15222": "SUP-08973",
+      "SUP-15223": "SUP-12693",
+      "SUP-15224": "SUP-11626",
+      "SUP-15225": "SUP-03241"
+    },
+    "supplier_needs_review": [
+      {
+        "alias_id": "SUP-15001",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15005",
+        "reason": "below threshold",
+        "top_score": 7,
+        "tied": 1
+      },
+      {
+        "alias_id": "SUP-15019",
+        "reason": "ambiguous - tied candidates",
+        "top_score": 8,
+        "tied": 2
+      },
+      {
+        "alias_id": "SUP-15026",
+        "reason": "below threshold",
+        "top_score": 7,
+        "tied": 1
+      },
+      {
+        "alias_id": "SUP-15053",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15054",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15133",
+        "reason": "ambiguous - tied candidates",
+        "top_score": 7,
+        "tied": 2
+      },
+      {
+        "alias_id": "SUP-15147",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15153",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15155",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15157",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15170",
+        "reason": "no name-block match",
+        "top_score": 0
+      },
+      {
+        "alias_id": "SUP-15176",
+        "reason": "ambiguous - tied candidates",
+        "top_score": 8,
+        "tied": 3
+      },
+      {
+        "alias_id": "SUP-15209",
+        "reason": "no name-block match",
+        "top_score": 0
+      }
+    ],
+    "part_alias_map": {
+      "BR-170-ALT": "BR-170",
+      "BR-1010-ALT": "BR-1010",
+      "HY-508-ALT": "HY-508",
+      "ST-543-ALT": "ST-543",
+      "FL-683-ALT": "FL-683",
+      "EC-1080-ALT": "EC-1080",
+      "FT-266-ALT": "FT-266",
+      "HY-1189-ALT": "HY-1189",
+      "FT-1290-ALT": "FT-1290",
+      "ST-834-ALT": "ST-834",
+      "ST-971-ALT": "ST-971",
+      "EN-518-ALT": "EN-518",
+      "EN-367-ALT": "EN-367",
+      "FL-1023-ALT": "FL-1023",
+      "EL-1281-ALT": "EL-1281",
+      "EC-374-ALT": "EC-374",
+      "EL-504-ALT": "EL-504",
+      "EN-422-ALT": "EN-422",
+      "TR-540-ALT": "TR-540",
+      "ST-492-ALT": "ST-492",
+      "EC-169-ALT": "EC-169",
+      "EN-690-ALT": "EN-690",
+      "BR-1266-ALT": "BR-1266",
+      "EL-964-ALT": "EL-964",
+      "CB-209-ALT": "CB-209",
+      "CB-865-ALT": "CB-865",
+      "FT-386-ALT": "FT-386",
+      "FT-1189-ALT": "FT-1189",
+      "ST-299-ALT": "ST-299",
+      "FL-437-ALT": "FL-437",
+      "CB-415-ALT": "CB-415",
+      "ST-805-ALT": "ST-805",
+      "EL-682-ALT": "EL-682",
+      "FT-1038-ALT": "FT-1038",
+      "BR-529-ALT": "BR-529",
+      "FT-1332-ALT": "FT-1332",
+      "EC-948-ALT": "EC-948",
+      "ST-229-ALT": "ST-229",
+      "FL-729-ALT": "FL-729",
+      "FT-518-ALT": "FT-518",
+      "ST-162-ALT": "ST-162",
+      "ST-486-ALT": "ST-486",
+      "EL-1052-ALT": "EL-1052",
+      "HY-1319-ALT": "HY-1319",
+      "EL-913-ALT": "EL-913",
+      "SC-454-ALT": "SC-454",
+      "FL-753-ALT": "FL-753",
+      "EL-182-ALT": "EL-182",
+      "EL-153-ALT": "EL-153",
+      "SC-275-ALT": "SC-275",
+      "HY-1059-ALT": "HY-1059",
+      "EL-578-ALT": "EL-578",
+      "CB-607-ALT": "CB-607",
+      "EN-1285-ALT": "EN-1285",
+      "EL-434-ALT": "EL-434",
+      "FL-696-ALT": "FL-696",
+      "BR-504-ALT": "BR-504",
+      "BR-780-ALT": "BR-780",
+      "TR-1311-ALT": "TR-1311",
+      "EL-1189-ALT": "EL-1189",
+      "FL-1299-ALT": "FL-1299",
+      "HY-502-ALT": "HY-502",
+      "FL-203-ALT": "FL-203",
+      "TR-349-ALT": "TR-349",
+      "TR-860-ALT": "TR-860",
+      "EC-961-ALT": "EC-961",
+      "FL-928-ALT": "FL-928",
+      "FL-357-ALT": "FL-357",
+      "ST-1342-ALT": "ST-1342",
+      "CH-1330-ALT": "CH-1330",
+      "EC-1289-ALT": "EC-1289",
+      "TR-1244-ALT": "TR-1244",
+      "EN-1279-ALT": "EN-1279",
+      "CB-373-ALT": "CB-373",
+      "EC-791-ALT": "EC-791",
+      "TR-1013-ALT": "TR-1013",
+      "HY-1343-ALT": "HY-1343",
+      "FL-209-ALT": "FL-209",
+      "FL-1271-ALT": "FL-1271",
+      "EC-1074-ALT": "EC-1074",
+      "FT-146-ALT": "FT-146",
+      "CH-1260-ALT": "CH-1260",
+      "FL-470-ALT": "FL-470",
+      "ST-609-ALT": "ST-609",
+      "TR-127-ALT": "TR-127",
+      "FL-810-ALT": "FL-810",
+      "EL-647-ALT": "EL-647",
+      "EC-803-ALT": "EC-803",
+      "SC-1015-ALT": "SC-1015",
+      "CH-477-ALT": "CH-477",
+      "FT-609-ALT": "FT-609",
+      "ST-260-ALT": "ST-260",
+      "CH-372-ALT": "CH-372",
+      "EN-870-ALT": "EN-870",
+      "SC-888-ALT": "SC-888",
+      "FL-893-ALT": "FL-893",
+      "CH-1195-ALT": "CH-1195",
+      "BR-518-ALT": "BR-518",
+      "EL-1151-ALT": "EL-1151",
+      "ST-833-ALT": "ST-833",
+      "HY-337-ALT": "HY-337",
+      "EN-527-ALT": "EN-527",
+      "ST-1166-ALT": "ST-1166",
+      "CH-452-ALT": "CH-452",
+      "TR-509-ALT": "TR-509",
+      "CH-958-ALT": "CH-958",
+      "FT-905-ALT": "FT-905",
+      "HY-816-ALT": "HY-816",
+      "FL-458-ALT": "FL-458",
+      "SC-1271-ALT": "SC-1271",
+      "HY-202-ALT": "HY-202",
+      "CB-452-ALT": "CB-452",
+      "BR-568-ALT": "BR-568",
+      "HY-652-ALT": "HY-652",
+      "CH-879-ALT": "CH-879",
+      "EN-982-ALT": "EN-982",
+      "EL-620-ALT": "EL-620",
+      "FL-664-ALT": "FL-664",
+      "EC-1107-ALT": "EC-1107",
+      "EN-1221-ALT": "EN-1221"
+    },
+    "attr_weights": {
+      "supplier_country": 3,
+      "onboarding_date": 3,
+      "supplier_tier": 2,
+      "supplier_region": 2,
+      "certification_status": 1
+    },
+    "accept_score": 8,
+    "max_score": 11
+  },
+  "golden_thread": {
+    "part": "SC-417",
+    "product": "HRV-03",
+    "plant": "P2",
+    "supplier": "SUP-00042",
+    "po": "PO-9999001",
+    "plan": "PLAN-9999001",
+    "quality_event": "QE-9999001",
+    "substitute": "SC-418",
+    "alt_plant": "P5"
+  },
+  "node_budget": {
+    "Part": 15120,
+    "Product": 70,
+    "Plant": 12,
+    "Supplier": 15225,
+    "Dealer": 899,
+    "CalendarPeriod": 36,
+    "Forecast": 21630,
+    "CustomerOrder": 30260,
+    "PurchaseOrder": 27002,
+    "Shipment": 21122,
+    "InventoryPosition": 24005,
+    "QualityEvent": 16001,
+    "ProductionPlan": 18001,
+    "LogisticsLane": 15200
+  },
+  "relationship_budget": {
+    "REQUIRES_PART": 21600,
+    "SUPPLIES": 28000,
+    "HAS_SUBSTITUTE": 16020,
+    "HAS_FORECAST": 21630,
+    "HAS_ORDER": 60520,
+    "PurchaseOrder edges": 81006,
+    "Shipment edges": 42244,
+    "Inventory edges": 48010,
+    "QualityEvent edges": 32002,
+    "ProductionPlan edges": 36002,
+    "MOVES_ON_LANE": 15200,
+    "OCCURS_IN_PERIOD": 90638
+  },
+  "known_issues": [
+    {
+      "area": "ingestion",
+      "issue": "Some integer-valued columns are float-formatted in the source CSV (e.g. reserved_qty='346.0', planned_qty='20.0').",
+      "impact": "Naive int() casting raises ValueError; naive float casting stores whole numbers as Neo4j Floats.",
+      "mitigation": "Phase 2 coerces via float() then int() where the value is integral, with the column's target type declared per-field in the load spec."
+    },
+    {
+      "area": "entity resolution",
+      "issue": "14 of 225 flagged duplicate suppliers could not be resolved automatically (9 have no name-block match, 3 are ambiguous ties, 2 score below threshold).",
+      "impact": "Those suppliers remain as separate nodes, so aggregate queries may slightly over-count distinct suppliers for the affected names.",
+      "mitigation": "Loaded with needs_steward_review=true and surfaced in the UI rather than guessed. A data steward resolves them out-of-band."
+    },
+    {
+      "area": "entity resolution",
+      "issue": "No ground-truth labels exist for the 211 auto-merges - we can show they are self-consistent, not that they are correct.",
+      "impact": "Precision of the merge step is unmeasured.",
+      "mitigation": "Phase 5 adds a deterministic benchmark check on a hand-verified sample."
+    },
+    {
+      "area": "evidence completeness",
+      "issue": "supplier_capacity.csv ends at 2026-04, but the shortage window is 2026-08/09.",
+      "impact": "The supplier-capacity driver cannot be corroborated from structured data; it rests on narrative evidence only.",
+      "mitigation": "The agent must report this as missing evidence and lower confidence on that specific driver, rather than asserting it as fact."
+    },
+    {
+      "area": "evidence conflict",
+      "issue": "PO-9999001 has two Delayed shipment records (SHP-0013901, SHP-0021122) on different lanes for the same 600 units.",
+      "impact": "Naive traversal double-counts in-transit quantity.",
+      "mitigation": "Phase 2 keeps both edges; the agent surfaces the conflict in contradictory_or_missing_evidence instead of picking one."
+    },
+    {
+      "area": "deployment",
+      "issue": "The graph is hosted on a local Neo4j Desktop instance, not a shared cloud DB.",
+      "impact": "A reviewer cannot query it without running the ingestion locally first; the graph is not portable as-is.",
+      "mitigation": "Phase 2 ingestion is fully reproducible from the CSVs in one pass. Production would use Aura Professional or a managed cluster."
+    }
+  ]
+}
