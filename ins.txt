@@ -1,0 +1,1 @@
+pip install neo4j openai pandas pydantic python-dotenv pyyaml rank-bm25 gradio mlflow httpx ipykernel

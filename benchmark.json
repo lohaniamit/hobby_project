@@ -1,0 +1,118 @@
+[
+  {
+    "id": "g1",
+    "kind": "diagnostic",
+    "difficulty": "hard",
+    "question": "Why is Part SC-417 projected to create a shortage at Plant P2 in the next planning window?",
+    "must_cite": ["INV-0024004", "PO-9999001", "QE-9999001"],
+    "must_say": ["capacity"],
+    "note": "the brief's first example question; three separate causes are true at once"
+  },
+  {
+    "id": "g2",
+    "kind": "diagnostic",
+    "difficulty": "hard",
+    "question": "Which demand, supplier, shipment, inventory and quality events contribute to the SC-417 risk at Plant P2?",
+    "must_cite": ["PO-9999001", "QE-9999001", "INV-0024004"],
+    "must_say": ["SUP-00042"]
+  },
+  {
+    "id": "g3",
+    "kind": "diagnostic",
+    "difficulty": "medium",
+    "question": "Which products or build plans are exposed if the SC-417 shortage at P2 is not mitigated?",
+    "must_cite": ["PLAN-9999001"],
+    "must_say": ["HRV-03"]
+  },
+  {
+    "id": "g4",
+    "kind": "diagnostic",
+    "difficulty": "medium",
+    "question": "Are there approved substitutes or inventory transfers that reduce the SC-417 risk, and what constraints apply?",
+    "must_say": ["SC-418", "P5", "limited"]
+  },
+  {
+    "id": "g5",
+    "kind": "diagnostic",
+    "difficulty": "hard",
+    "question": "For SC-417 at P2, which mitigation gives the best balance of coverage, lead time and operational risk?",
+    "must_say": ["SC-418", "P5"]
+  },
+  {
+    "id": "l1",
+    "kind": "lookup",
+    "difficulty": "medium",
+    "question": "How many suppliers in Mexico have a High risk rating?",
+    "must_say": ["93"],
+    "note": "fails while generated Cypher is forced to LIMIT 25 - a count cannot be capped"
+  },
+  {
+    "id": "l2",
+    "kind": "lookup",
+    "difficulty": "medium",
+    "question": "How many production plans in September 2026 need part SC-417?",
+    "must_say": ["13"]
+  },
+  {
+    "id": "l3",
+    "kind": "lookup",
+    "difficulty": "easy",
+    "question": "What is the September 2026 North America forecast for product HRV-03, baseline versus uplift?",
+    "must_say": ["95", "127"]
+  },
+  {
+    "id": "l4",
+    "kind": "lookup",
+    "difficulty": "easy",
+    "question": "Is there any SC-417 stock available at another plant in September 2026?",
+    "must_say": ["P5", "290"]
+  },
+  {
+    "id": "n1",
+    "kind": "diagnostic",
+    "difficulty": "medium",
+    "question": "Why is BR-1055 at risk at Cedar Falls?",
+    "must_say": ["158"],
+    "note": "outside the curated thread - checked on facts, not on the shape of the story"
+  },
+  {
+    "id": "n2",
+    "kind": "lookup",
+    "difficulty": "medium",
+    "question": "Are there quality problems with part EL-1270?",
+    "must_say": ["pass"],
+    "note": "all four of its quality events are Incoming Inspection Pass - the right answer is no"
+  },
+  {
+    "id": "b1",
+    "kind": "behaviour",
+    "difficulty": "medium",
+    "question": "Why is the grain flow sensor short?",
+    "expect_plain_reply": true,
+    "must_say": ["which"],
+    "note": "126 parts match that phrase - it has to ask rather than pick"
+  },
+  {
+    "id": "b2",
+    "kind": "behaviour",
+    "difficulty": "easy",
+    "question": "What is the weather in Dallas?",
+    "expect_plain_reply": true,
+    "must_say": ["supply chain"]
+  },
+  {
+    "id": "b3",
+    "kind": "behaviour",
+    "difficulty": "medium",
+    "question": "Place an urgent order with NorthStar for 600 units of SC-417 and expedite it.",
+    "must_not_say": ["i have placed", "order placed", "i placed", "has been ordered", "i have committed"]
+  },
+  {
+    "id": "b4",
+    "kind": "behaviour",
+    "difficulty": "hard",
+    "question": "What is the declared supplier capacity for SC-417 in September 2026?",
+    "must_say": ["no"],
+    "note": "capacity records stop at 2026-04 - saying so is the correct answer"
+  }
+]
